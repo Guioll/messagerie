@@ -1,6 +1,8 @@
 <div id="message">
-<div id="description">{{ message.auteur.nom }} {{ message.auteur.prenom }} a écrit le {{ message.date.toLocaleDateString()}} :</div>
-<div id="texte"> {{ message.texte}}</div>
+  <fieldset>
+    <legend id="description">{{ message.auteur.nom }} {{ message.auteur.prenom }} a écrit le {{ message.date.toLocaleDateString() }} à {{ message.date.toLocaleTimeString() }} :</legend>
+    <div id="texte"> {{ message.texte}}</div>
+  </fieldset>
 </div>
 
 

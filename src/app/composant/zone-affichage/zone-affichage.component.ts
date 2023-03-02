@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Message} from "../../models/Message";
-import {Personne} from "../../models/Personne";
+import {ListePersonneService} from "../../services/liste-personne.service";
 
 @Component({
   selector: 'app-zone-affichage',
@@ -10,10 +10,12 @@ import {Personne} from "../../models/Personne";
 export class ZoneAffichageComponent {
   public messages: Message[];
 
-  constructor() {
+  constructor(
+    private listePersonne : ListePersonneService
+  ) {
     this.messages = [];
-    let balzac = new Personne("De balzac", "Honoré");
-    let m = new Message(balzac, "Le père Goriot");
+    let auteur = this.listePersonne.liste[2];
+    let m = new Message(auteur, "Le père Goriot");
     this.messages.push(m);
   }
 }
