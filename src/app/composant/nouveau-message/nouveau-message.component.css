@@ -1,0 +1,8 @@
+#auteur, #message{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input {
+  align-content: end;
+}

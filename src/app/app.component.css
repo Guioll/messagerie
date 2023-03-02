@@ -1,0 +1,24 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% auto auto;
+  grid-template-rows: auto 1fr 1fr;
+}
+app-entete{
+  grid-column: 1/4;
+  text-align: center;
+  border: solid;
+}
+app-zone-personne{
+  grid-row: 2/4;
+  border: solid;
+}
+app-zone-affichage{
+  grid-column: 2/4;
+  grid-row: 2;
+  border: solid;
+}
+app-nouveau-message{
+  grid-column: 2/4;
+  grid-row: 3;
+  border: solid;
+}
