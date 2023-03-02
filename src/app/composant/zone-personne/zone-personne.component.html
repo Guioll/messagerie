@@ -1,3 +1,7 @@
+<div id="divPersonnes">
+
 <div id="titreZone">Personnes actives : </div>
-<app-personne></app-personne>
-<app-personne></app-personne>
+<div *ngFor="let personne of personnes">
+  <a href="#">{{ personne.nom }} - {{ personne.prenom }}</a>
+</div>
+</div>

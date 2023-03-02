@@ -1,3 +1,7 @@
+#zoneNouveau{
+  padding: 10px;
+}
+
 #auteur, #message{
   box-sizing: border-box;
   width: 100%;

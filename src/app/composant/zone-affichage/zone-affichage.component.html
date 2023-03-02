@@ -1,3 +1,9 @@
-<div id="zoneAffichage">Liste Messages</div>
-<app-message></app-message>
-<app-message></app-message>
+<div id="zoneAffichage">
+  Liste Messages :
+  <div id="liste">
+    <div *ngFor="let message of messages">
+      <app-message [message]="message"></app-message>
+    </div>
+  </div>
+</div>
+
